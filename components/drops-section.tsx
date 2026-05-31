@@ -38,7 +38,7 @@ export function DropsSection() {
 
   return (
     <section className="bg-white py-12 md:py-16 px-4 md:px-6">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="px-1 mb-8 md:mb-10">
           <h2 className="text-2xl md:text-4xl lg:text-5xl text-[#0a1628] font-light tracking-tight leading-tight">

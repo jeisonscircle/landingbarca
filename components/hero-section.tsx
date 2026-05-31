@@ -61,12 +61,6 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Tagline */}
-        <p className="text-2xl sm:text-3xl md:text-4xl text-[#0a1628] font-light leading-tight">
-          Exclusive <span className="font-bold">scent drops</span> capture
-          <br />defining <span className="font-bold">Barça</span> moments.
-        </p>
-
       </div>
     </section>
   )
