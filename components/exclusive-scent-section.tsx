@@ -6,7 +6,7 @@ const scentNotes = ['Grass', 'Bergamot', 'Vetiver', 'Sandalwood']
 
 export function ExclusiveScentSection() {
   return (
-    <section className="bg-white py-14 md:py-20 px-4 md:px-6">
+    <section className="bg-[#f0f0f0] py-14 md:py-20 px-4 md:px-6">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="mb-10 md:mb-14">
@@ -42,16 +42,6 @@ export function ExclusiveScentSection() {
           {/* Right - Product image */}
           <div className="md:col-span-2 flex justify-end">
             <div className="relative w-full max-w-xs">
-              {/* FCB Badge */}
-              <div className="absolute top-4 right-4 z-10 bg-white rounded-full px-3 py-2 flex items-center gap-2 shadow-lg">
-                <div className="w-5 h-5 bg-[#A50044] rounded flex items-center justify-center">
-                  <span className="text-white text-xs font-bold">FCB</span>
-                </div>
-                <div className="text-xs">
-                  <div className="font-bold text-[#0a1628]">FCB</div>
-                  <div className="text-[#0a1628]/70 text-xs">Exclusive Scent</div>
-                </div>
-              </div>
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/unnamed-B6A1R94xUEC1dOFIT5ciqmA1Zu6BYS.png"
                 alt="FCB Exclusive Scent - Green lime with roots and moss"
@@ -69,10 +59,10 @@ export function ExclusiveScentSection() {
 
 export function CtaBannerSection() {
   return (
-    <section className="bg-[#1a3a52] py-12 md:py-16 px-4 md:px-6">
+    <section className="bg-white py-12 md:py-16 px-4 md:px-6">
       <div className="max-w-5xl mx-auto">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 md:gap-12">
-          <h2 className="text-2xl md:text-4xl text-white font-normal leading-snug">
+          <h2 className="text-2xl md:text-4xl text-[#0a1628] font-normal leading-snug">
             Be part of the moment before<br />
             it&apos;s <span className="font-bold">history</span>
           </h2>
