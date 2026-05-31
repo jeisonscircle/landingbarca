@@ -9,8 +9,8 @@ export function ExclusiveScentSection() {
     <section className="bg-[#f0f0f0] py-14 md:py-20 px-4 md:px-6">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
-        <div className="mb-10 md:mb-14">
-          <h2 className="text-xl md:text-3xl text-[#0a1628] font-normal tracking-tight leading-snug">
+        <div className="mb-12 md:mb-16 text-center">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl text-[#0a1628] font-normal tracking-tight leading-snug">
             The <span className="font-bold italic">official</span> FC Barcelona scent.<br />
             Present in every drop and available in<br />
             personal creations
@@ -21,9 +21,13 @@ export function ExclusiveScentSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-start">
           {/* Left - Scent notes */}
           <div className="md:col-span-1">
-            <h3 className="text-base md:text-lg text-[#0a1628] font-normal mb-2 pb-2 border-b border-[#0a1628]">
-              Return to the Canvass
-            </h3>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="flex-1 h-px bg-[#0a1628]/30"></div>
+              <h3 className="text-base md:text-lg text-[#0a1628] font-normal whitespace-nowrap">
+                Return to the Canvass
+              </h3>
+              <div className="flex-1 h-px bg-[#0a1628]/30"></div>
+            </div>
             <div className="mt-4">
               {scentNotes.map((note, index) => (
                 <div
