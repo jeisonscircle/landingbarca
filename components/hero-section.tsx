@@ -11,7 +11,7 @@ export function HeroSection() {
         </h1>
 
         {/* Two cards side by side */}
-        <div className="grid grid-cols-2 gap-4 md:gap-6 mb-8 md:mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-8 md:mb-10">
           {/* Card 1 - Legendary Barça drops */}
           <div className="flex flex-col">
             <h3 className="text-base sm:text-lg md:text-xl font-normal text-[#0a1628] mb-2 md:mb-3 leading-tight">
