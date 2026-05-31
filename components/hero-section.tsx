@@ -10,7 +10,7 @@ export function HeroSection() {
         </h1>
 
         {/* Two cards side by side */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 mb-6">
           {/* Card 1 - Legendary Barça drops */}
           <div className="flex flex-col">
             <h3 className="text-lg md:text-xl text-[#0a1628] mb-3">
@@ -42,15 +42,12 @@ export function HeroSection() {
             </h3>
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-[#0a1628]">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FCBxSCIRCLE_INTERIOR_CATALA%CC%81N_TIMELESS-KW9QNW6HtPi5XdxteS8gJ2WEkUHrDk.jpg"
-                alt="FC Barcelona personal fragrance creation"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Apr%2027%2C%202026%2C%2003_54_02%20PM%201-XcyNWJn4n1hGTGRDEfqr2US1EWfPLP.png"
+                alt="FC Barcelona fans in stadium"
                 fill
                 className="object-cover"
                 priority
               />
-              <div className="absolute top-4 left-4">
-                <span className="text-white/80 text-xs tracking-wider">FC BARCELONA</span>
-              </div>
               <div className="absolute bottom-4 left-4">
                 <button className="bg-gradient-to-r from-[#FF6B5B] via-[#FF9D4D] to-[#FFD166] text-white rounded-full px-5 py-2 text-sm font-medium">
                   Discover the Drops
@@ -62,6 +59,13 @@ export function HeroSection() {
             </p>
           </div>
         </div>
+
+        {/* Bottom tagline */}
+        <p className="text-center text-sm md:text-base text-[#0a1628] mt-8 md:mt-10">
+          <span className="font-light">Exclusive</span> <span className="font-bold">scent drops</span> <span className="font-light">capture</span>
+          <br className="hidden sm:block" />
+          <span className="font-light">defining</span> <span className="font-bold">Barça</span> <span className="font-light">moments.</span>
+        </p>
       </div>
     </section>
   )
