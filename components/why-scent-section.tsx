@@ -1,101 +1,60 @@
 'use client'
 
 import Image from 'next/image'
-import { Button } from '@/components/ui/button'
 
 export function WhyScentSection() {
   return (
-    <section className="bg-white">
-      {/* Why Scent - Top Row */}
-      <div className="grid grid-cols-1 lg:grid-cols-2">
-        {/* Image first on mobile */}
-        <div className="relative h-[260px] sm:h-[320px] lg:hidden">
-          <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DTS_DEEP_SPA_DTS_Studio_Photos_ID11009%201-b4lmeV8BN5GBOGYjvSARPhMuhUC8SS.png"
-            alt="Close-up sensory experience with closed eyes"
-            fill
-            className="object-cover"
-          />
-        </div>
+    <section className="bg-[#f0f0f0] py-12 md:py-16 px-4 md:px-6">
+      <div className="max-w-5xl mx-auto">
+        {/* Title */}
+        <h2 className="text-2xl md:text-4xl text-[#0a1628] font-normal tracking-tight leading-tight mb-10 md:mb-14">
+          Create your <span className="font-bold">Own Barça Scent.</span>
+        </h2>
 
-        {/* Left - Text */}
-        <div className="relative bg-white px-6 py-10 md:p-12 lg:p-16 flex flex-col justify-center">
-          <div className="absolute left-4 top-1/2 -translate-y-1/2 hidden md:block">
-            <span
-              className="text-[#0a1628]/40 text-xs tracking-[0.3em] uppercase"
-              style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}
-            >
-              WHY SCENT
-            </span>
+        {/* First Row - Memories have a smell */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10 mb-8 md:mb-12">
+          {/* Left - Text */}
+          <div className="flex flex-col justify-center md:col-span-1">
+            <p className="text-sm sm:text-base md:text-lg text-[#0a1628] font-normal leading-relaxed">
+              Memories have a <span className="font-bold">smell</span>.<br />
+              Science shows a <span className="font-bold">scent</span> is the<br />
+              sense most strongly linked to<br />
+              <span className="font-bold">emotion</span> and memory.
+            </p>
           </div>
-          <div className="md:ml-10">
-            <h2 className="text-xl md:text-3xl lg:text-4xl text-[#0a1628] font-light leading-tight mb-7">
-              Memories have a <strong>smell</strong>.
-              <br />
-              Science shows <strong>scent</strong> is the
-              <br />
-              sense most strongly linked to
-              <br />
-              <strong>emotion</strong> and memory.
-            </h2>
-            <Button
-              variant="outline"
-              className="rounded-full px-6 py-2.5 border-[#0a1628] text-[#0a1628] hover:bg-[#0a1628] hover:text-white transition-colors"
-            >
-              → Discover more
-            </Button>
+          {/* Right - Image */}
+          <div className="relative aspect-video md:aspect-[5/3] rounded-lg md:rounded-2xl overflow-hidden md:col-span-2">
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DTS_DEEP_SPA_DTS_Studio_Photos_ID11009%201-b4lmeV8BN5GBOGYjvSARPhMuhUC8SS.png"
+              alt="Close-up sensory experience"
+              fill
+              className="object-cover"
+            />
           </div>
         </div>
 
-        {/* Right - Image (desktop only) */}
-        <div className="relative hidden lg:block min-h-[400px]">
-          <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DTS_DEEP_SPA_DTS_Studio_Photos_ID11009%201-b4lmeV8BN5GBOGYjvSARPhMuhUC8SS.png"
-            alt="Close-up sensory experience with closed eyes"
-            fill
-            className="object-cover"
-          />
-        </div>
-      </div>
-
-      {/* Your Barça Story - Bottom Row */}
-      <div className="grid grid-cols-1 lg:grid-cols-2">
-        {/* Left - Image */}
-        <div className="relative h-[260px] sm:h-[320px] lg:min-h-[400px]">
-          <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SSkqmeYtSJnF8aG3OjI61_ZBXxWpfM-Zg6wFPBGQIY7HcWmVBXlBqSw2P0ikn.png"
-            alt="Fan experiencing Barça scent"
-            fill
-            className="object-cover"
-          />
-        </div>
-
-        {/* Right - Text */}
-        <div className="relative bg-white px-6 py-10 md:p-12 lg:p-16 flex flex-col justify-center">
-          <div className="absolute right-4 top-1/2 -translate-y-1/2 hidden md:block">
-            <span
-              className="text-[#0a1628]/40 text-xs tracking-[0.3em] uppercase"
-              style={{ writingMode: 'vertical-rl' }}
-            >
-              YOUR BARÇA STORY
-            </span>
+        {/* Second Row - Your story becomes a scent */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10">
+          {/* Left - Image */}
+          <div className="relative aspect-square rounded-lg md:rounded-2xl overflow-hidden">
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/unnamed-B6A1R94xUEC1dOFIT5ciqmA1Zu6BYS.png"
+              alt="FCB Exclusive Scent ingredients"
+              fill
+              className="object-cover"
+            />
           </div>
-          <div className="max-w-lg">
-            <h2 className="text-xl md:text-3xl lg:text-4xl text-[#0a1628] font-light leading-tight mb-7">
-              Now, <strong>your</strong> story becomes a
-              <br />
-              scent. You can create your
-              <br />
-              own <strong>personalized</strong>
-              <br />
-              <strong>Barça</strong> scent.
-            </h2>
-            <Button
-              variant="outline"
-              className="rounded-full px-6 py-2.5 border-[#0a1628] text-[#0a1628] hover:bg-[#0a1628] hover:text-white transition-colors"
-            >
-              → Create your Barça scent
-            </Button>
+          {/* Right - Text */}
+          <div className="flex flex-col justify-center md:col-span-2">
+            <p className="text-sm sm:text-base md:text-lg text-[#0a1628] font-normal leading-relaxed mb-4 md:mb-6">
+              Now, <span className="font-bold">your story becomes</span><br />
+              <span className="font-bold">a scent</span>. You can create<br />
+              your own <span className="font-bold">personalized</span><br />
+              <span className="font-bold">Barça scent</span>.
+            </p>
+            <button className="self-start bg-gradient-to-r from-[#FF6B5B] via-[#FF9D4D] to-[#FFD166] text-white rounded-full px-5 md:px-8 py-2 md:py-3 text-xs md:text-base font-semibold hover:opacity-90 transition-opacity">
+              Discover the Drops
+            </button>
           </div>
         </div>
       </div>
