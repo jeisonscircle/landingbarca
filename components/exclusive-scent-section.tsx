@@ -21,23 +21,20 @@ export function ExclusiveScentSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-start">
           {/* Left - Scent notes */}
           <div className="md:col-span-1">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="flex-1 h-px bg-[#0a1628]/30"></div>
-              <h3 className="text-base md:text-lg text-[#0a1628] font-normal whitespace-nowrap">
-                Return to the Canvass
-              </h3>
-              <div className="flex-1 h-px bg-[#0a1628]/30"></div>
-            </div>
-            <div className="mt-4">
+            <h3 className="text-base md:text-lg text-[#0a1628] font-normal mb-2">
+              Return to the Canvass
+            </h3>
+            <div className="text-[#0a1628]/60 text-lg mb-4">+</div>
+            <div>
               {scentNotes.map((note, index) => (
-                <div
-                  key={note}
-                  className="flex items-center gap-3 py-2.5"
-                >
-                  <span className="text-[#0a1628]/60 text-sm font-normal w-8">
-                    {String(index + 1).padStart(2, '0')}
-                  </span>
-                  <span className="text-[#0a1628] text-base font-normal">{note}</span>
+                <div key={note} className="mb-0">
+                  <div className="flex items-center gap-3 py-2">
+                    <span className="text-[#0a1628]/60 text-sm font-normal w-8">
+                      {String(index + 1).padStart(2, '0')}
+                    </span>
+                    <span className="text-[#0a1628] text-base font-normal">{note}</span>
+                  </div>
+                  <div className="h-px bg-[#0a1628]/30 mb-2"></div>
                 </div>
               ))}
             </div>
